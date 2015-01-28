@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--[if lte IE 6]>
+  <style>#top, #bottom, #left, #right { display: none; }</style>
+  <![endif]-->
+
+  <meta charset="UTF-8">
+  <title>Adrianne Jhunjhnuwala</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!--   <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+  <script src="javascripts/lightGallery.js"></script> -->
+
+  <!-- JQUERY -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- JAVASCRIPT -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/adri.css">
+
+</head>
+<body>
+
+<div class="intro"></div>
+
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+<div class="container-fluid">
+  <div class="rows col-lg-12">
+
+    <div class="nameDisplay">
+        <img src="images/makeup.png" class="toc" id="makeup" alt=""></img>
+        <p id="name"> ADRIANNE YAMAGUCHI </p>
+      <section class="navbar">
+        <a href="#" class="adri toc" title="portfolio">Work</a>
+        <a href="#" class="adri toc" title="about">About</a>
+        <a href="#" class="adri toc" title="services">Services</a>
+        <a href="#" class="adri toc" title="contact">Contact</a>
+      </section>
+    </div>
+
+    <hr>
+
+    <div class="body">
+      <section id="about">
+        <div class="circle" id="aboutCircle"></div>
+          <h3 class="title">About Me</h3 class="title">
+        <h4>Born in Hong Kong. Raised in Southern California.</h4><br>
+        <p class="band">After working as a technology-specialist at a financial company, I decided to pursue my true passion of art through make up. Ancient alien Puma Punku spaceships portal DNA manipulation electromagnetic earth mound mystery megoliths, ancient alien theorists golden disk Annunaki elongated skull Mahabharata space time mercury, Giorgio sightings space time astronaut Easter island foo fighter otherworldly visitors. Ancient civilization ancient alien star people star gates vimana inter-dimensional, space time Annunaki cover up anti-gravity stonehenge sightings astronaut Easter island, pre-colonial aerodynamics Chariot of the Gods Indian texts portal. I know it sounds crazy... <br><br>Machu Picchu von Daniken, Sumerian texts Giorgio pre-colonial aerodynamics choral castle pyramids, portal space brothers sky people extraterrestrial. Magnetic current gods SETI vimana space time, ancient alien burmuta triangle, space travel ancient alien theorists. Space brothers pyramids sightings Nazca lines ancient alien flying vessels mainstream archaelogy, space time Mahabharata spaceships mercury technology worm hole Vymaanika-Shaastra ancient god technology, sightings burmuta triangle grey earth mound NASA megoliths Mayan UFO. Elongated skull ancient alien theorists, sky people technology, Nazca lines extraterrestrial.</p>
+      </section>
+
+      <section id="services">
+        <div class="circle" id="servicesCircle"></div>
+        <h3 class="title">Services</h3><br>
+        <div class="col-md-8">
+        <table class="table table-bordered">
+          <tr>
+            <th>Price</th>
+            <th>Package</th>
+            <th>Specs</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>$50</td>
+              <td>Hourly</td>
+              <td>Clients will receive facial treatment as well as make up</td>
+            </tr>
+            <tr>
+              <td>$250</td>
+              <td>Flatrate</td>
+              <td>Fixed price for up to 4 hours</td>
+            </tr>
+            <tr>
+              <td>$350</td>
+              <td>Weddings</td>
+              <td>Includes bridesmaids and any wedding member</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="current" id="portfolio">
+      <div class="circle" id="portfolioCircle"></div>
+        <h3 class="title">Beauty is power, a smile is its sword.</h3>
+        <h3 style="padding-bottom: 40px">Charles Reade</h3>
+        <div class="col-lg-12 col-md-12 center">
+          <img src="../images/1.png" alt="" class="portfolioImage">
+          <img src="../images/4.png" alt="" class="portfolioImage">
+        </div>
+        <div class="col-lg-12 col-md-12 center">
+          <img src="../images/3.png" alt="" class="portfolioImage">
+          <img src="../images/2.png" alt="" class="portfolioImage">
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="circle" id="contactCircle"></div>
+        <h3 class="title">Contact</h3><br>
+        <form class="well col-md-8">
+
+          <div class="col-md-4">
+            <label>First Name</label>
+            <input type="text"  placeholder="Your First Name"><br>
+            <label>Last Name</label>
+            <input type="text"  placeholder="Your Last Name"><br>
+            <label>Email Address</label>
+            <input type="text"  placeholder="Your email address"><br>
+            <label>Subject
+            <select id="subject" name="subject">
+              <option value="na" selected="">Choose One:</option>
+              <option value="personal">Personal </option>
+              <option value="wedding">Wedding</option>
+              <option value="party">Party</option>
+            </select>
+            </label>
+          </div>
+
+          <div class="col-md-8">
+            <label class="emails center">Message</label><br>
+            <textarea name="message" id="message" class="emails input col-md-8" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary pull-right">Send</button>
+
+        </form>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+$(document).ready(function() {
+  if (window.innerWidth < 950) {
+    $('.portfolioImage').css({
+      'height': '200px'
+    });
+  }
+  else if (window.innerWidth < 650) {
+    $('.portfolioImage').css({
+      'height': '',
+      'width': '300px'
+    });
+    $('.toc').css({
+      'margin-left': '10px',
+      'margin-right': '10px'
+    });
+  }
+});
+
+$(window).resize(function() {
+  if (window.innerWidth > 950) {
+  $('.portfolioImage').css({
+      'height': '350px'
+    });
+  }
+  else if (window.innerWidth < 950) {
+    $('.portfolioImage').css({
+      'height': '200px'
+    });
+  }
+  else if (window.innerWidth < 650) {
+    $('.portfolioImage').css({
+      'width': '300px'
+    });
+    $('.toc').css({
+      'margin-left': '10px',
+      'margin-right': '10px'
+    });
+  }
+});
+
+$(document).ready(function() {
+  if (window.innerWidth < 750) {
+    $('.body').css({
+      'padding-right': '8px',
+      'padding-left': '8px'
+    });
+  }
+});
+
+$(window).resize(function() {
+  if (window.innerWidth < 750) {
+    $('.body').css({
+      'padding-right': '8px',
+      'padding-left': '8px'
+    });
+  }
+  else if (window.innerWidth >= 750) {
+    $('.body').css({
+      'padding-right': '100px',
+      'padding-left': '100px'
+    });
+  }
+});
+
+$('#about, #services, #contact').hide();
+
+$('.adri').click(function() {
+    var id = (this.title);
+    // console.log(id);
+    var $content = $('#' + id);
+    if ($('.current').length === 0) {
+      showContent($content);
+    }
+    else
+      $('.current').fadeOut(300, function() {
+        showContent($content);
+      });
+    });
+
+function showContent(content) {
+    content.fadeIn(300);
+    $('.current').removeClass('current');
+    content.addClass('current');
+}
+</script>
+
+</body>
+</html>

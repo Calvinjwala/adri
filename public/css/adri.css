@@ -1,0 +1,201 @@
+/* PINK BORDER AROUND THE SCREEN */
+#top, #bottom, #left, #right {
+  /*background: #d2f0ec;*/
+  /*background: #485f77;*/
+  background: #192e47;
+
+  /*background: #eaabf2;*/
+  /*background: black;*/
+  position: fixed;
+  }
+
+#left, #right {
+  top: 0; bottom: 0;
+  width: 10px;
+  }
+  #left { left: 0; }
+  #right { right: 0; }
+
+#top, #bottom {
+  left: 0; right: 0;
+  height: 10px;
+  }
+  #top { top: 0; }
+  #bottom { bottom: 0; }
+
+@media
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+
+{
+  #top, #bottom, #left, #right { display: none; }
+}
+/* end of pink border */
+
+/* GENERAL SETTINGS */
+body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Vollkorn', serif;
+  font-size: 15px;
+}
+
+hr {
+  border-top: 2px solid #eee;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+a {
+  color: black;
+  padding: 5px;
+}
+
+a:hover {
+  color: black;
+}
+
+table {
+  text-align: left;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  margin-top: 5px;
+}
+
+.container-fluid {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.body {
+  padding-top: 18px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+
+/* HEADER */
+.nameDisplay {
+  padding-top: 45px;
+  top: 0;
+  text-align: center;
+}
+
+#name {
+  font-size: 24px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: -3px;
+  padding-bottom: 25px;
+}
+
+.navbar {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.toc {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+#makeup {
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content {
+  font-size: 13px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+/* END OF HEADER*/
+
+
+/* BEGINNING OF BODY CONTENT*/
+.title {
+  font-size: 30px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+
+/* ABOUT ME */
+.circle {
+  /*border-radius: 50%;*/
+  width: 50px;
+  height: 50px;
+  margin-bottom: -35px;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+#aboutCircle {
+  background-color: #ffe5d4;
+}
+
+.band {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* PORTFOLIO SECTION STYLING */
+.portfolioImage {
+  height: 350px;
+}
+
+.center {
+  text-align: center;
+}
+
+#portfolioCircle {
+  background-color: #efc7c2;
+}
+
+
+/* SERVICES STYLING */
+#servicesCircle {
+  background-color: #bfd3c1;
+}
+
+
+
+/* CONTACT STYLING*/
+#contactCircle {
+  background-color: #68a691;
+}
+
+.input {
+  width: 100%;
+  font-size: 13px;
+}
+
+.emails {
+  margin-left: 20px;
+}
+
+
